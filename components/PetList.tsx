@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 import React, { useState } from "react";
-import pets from "@/data/pets";
+import pets, { Pet } from "@/data/pets";
 import PetItem from "./PetItem";
 
 const PetList = () => {
@@ -15,9 +15,9 @@ const PetList = () => {
   const [displayPets, setDisplayPets] = useState(pets);
 
   const petList = displayPets
-    .filter((pet) => pet.name.toLowerCase().includes(search.toLowerCase()))
-    .filter((pet) => pet.type.toLowerCase().includes(type.toLowerCase()))
-    .map((pet) => (
+    .filter((pet: Pet) => pet.name.toLowerCase().includes(search.toLowerCase()))
+    .filter((pet: Pet) => pet.type.toLowerCase().includes(type.toLowerCase()))
+    .map((pet: Pet) => (
       <PetItem
         key={pet.id}
         pet={pet}

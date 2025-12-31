@@ -11,11 +11,31 @@ const AddPet = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Add Your Pet! </Text>
-      <TextInput placeholder="Name" style={styles.input} placeholderTextColor="#888" />
-      <TextInput placeholder="Description" style={styles.input} placeholderTextColor="#888" />
-      <TextInput placeholder="Type" style={styles.input} placeholderTextColor="#888" />
-      <TextInput placeholder="Image" style={styles.input} placeholderTextColor="#888" />
-      <TextInput placeholder="Adopted" style={styles.input} placeholderTextColor="#888" />
+      <TextInput
+        placeholder="Name"
+        style={styles.input}
+        placeholderTextColor="#888"
+      />
+      <TextInput
+        placeholder="Description"
+        style={styles.input}
+        placeholderTextColor="#888"
+      />
+      <TextInput
+        placeholder="Type"
+        style={styles.input}
+        placeholderTextColor="#888"
+      />
+      <TextInput
+        placeholder="Image"
+        style={styles.input}
+        placeholderTextColor="#888"
+      />
+      <TextInput
+        placeholder="Adopted"
+        style={styles.input}
+        placeholderTextColor="#888"
+      />
 
       <TouchableOpacity style={styles.button}>
         <Text style={styles.buttonText}>Add Pet</Text>
